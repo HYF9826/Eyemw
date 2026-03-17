@@ -3,7 +3,7 @@ import pandas as pd
 # ================================
 # 1 读取数据
 # ================================
-df = pd.read_excel("data/testdata_study1.xlsx")
+df = pd.read_excel("data/testdata_study3.xlsx")
 
 # 标签说明
 # 1 = mind wandering (正类)
@@ -37,7 +37,10 @@ features = [
     "OffscreenGazes",
     "OffScreenGazeProportion",
     "AOIGazes",
-    "AOIGazeProportion"
+    "AOIGazeProportion",
+    "UniqueSpeed1",
+    "OffScreenSpeed1",
+    "AOISpeed1"
 ]
 
 X_train = train_data[features]
